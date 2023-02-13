@@ -45,6 +45,7 @@ jobs:
         with:
           version: latest
           args: release --rm-dist
+        timeout-minutes: 360
         env:
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
           # GitHub sets this automatically
